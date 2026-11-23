@@ -1,0 +1,481 @@
+* {
+    box-sizing: border-box;
+    border: 2px solid rgb(252, 252, 252);
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+nav {
+    background-color: #E87F84;
+}
+
+main {
+    background-color: #FF9A8B;
+}
+
+section {
+    background-color:#f19aca;
+}
+
+aside {
+    background-color: #ef9df1;
+}
+
+footer {
+    background-color: #EF5297;
+}
+
+.altura {
+    height: 200px;
+}
+
+.titulo{
+    background-color: rgb(238, 173, 152);
+}
+
+.azul{
+    background-color: #ACDBE8;
+}
+
+.salmon{
+    background-color: #FFD4B2;
+}
+.verde{
+    background-color: #9EFA9D;
+}
+
+.amarillo{
+    background-color: #FAD259;
+}
+.morado{
+    background-color: #E89BD1;
+}
+
+.ros{
+    background-color: #FACEAA;
+}
+
+/* El Hover*/
+.boton {
+    background-color: #E87F84;
+    color: white;
+    padding: 15px;
+}
+
+.boton:hover {
+    background-color: #CC0483;
+}
+
+/* EL Active*/
+.botton {
+    background-color: #FF9A8B;
+    color: white;
+    padding: 15px;
+}
+
+.botton:active {
+    background-color: #FF05A4;
+}
+
+/* Focus */
+input:focus {
+    border: 3px solid rgb(255, 0, 179);
+    background-color: rgb(247, 154, 205);
+    
+}
+.color{
+    background-color: #E87F84;
+}
+
+/*focus-visible*/
+.buttoon:focus-visible {
+    outline: 3px solid rgb(255, 0, 191);
+    background-color: #FF9A8B;
+}
+
+/*focus-within*/
+.caja {
+    padding: 20px;
+    border: 2px solid rgb(255, 5, 192);
+}
+
+.caja:focus-within {
+    background-color: lightblue;
+}
+/*link*/
+a:link {
+    color: rgb(255, 0, 221);
+}
+
+/*visited*/
+a:visited {
+    color: purple;
+}
+
+/*any-link*/
+a:any-link {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*local-link*/
+a:local-link {
+    color: purple;
+}
+
+/* target*/
+section:target {
+    background-color: yellow;
+}
+
+/*scope*/
+p {
+    border: 2px solid rgb(248, 6, 127);
+    background-color: rgb(252, 137, 181);
+}
+
+/*enabled*/
+.input1:enabled {
+    background-color: rgb(83, 255, 83);
+}
+
+/*disabled*/
+.input2:disabled {
+    background-color: rgb(238, 138, 138);
+}
+
+/*checked*/
+.input3:checked {
+    accent-color: green;
+}
+
+/*indeterminate*/
+.input4:indeterminate {
+    outline: 3px solid rgb(255, 0, 0);
+}
+
+/*default*/
+.input5:default {
+    outline: 3px solid blue;
+}
+
+/*required*/
+.input6:required {
+    border: 2px solid rgb(255, 0, 191);
+}
+
+/*optional*/
+.input7:optional {
+    border: 2px solid rgb(104, 13, 179);
+}
+
+/*valid*/
+.input8:valid {
+    border: 2px solid green;
+}
+
+/*invalid*/
+.input8:invalid {
+    border: 2px solid red;
+}
+
+/*user-valid*/
+.input8:user-valid {
+    border: 2px solid green;
+}
+
+/*user-invalid*/
+.input8:user-invalid {
+    border: 2px solid red;
+}
+
+/*in-range*/
+.input9:in-range {
+    background-color: lightgreen;
+}
+
+/*out-of-range*/
+.input10:out-of-range {
+    background-color: pink;
+}
+
+/*read-only*/
+.input11:read-only {
+    background-color: lightgray;
+}
+
+/*:read-write*/
+.input12:read-write {
+    background-color: lightyellow;
+}
+
+/*placeholder-shown*/
+.input13:placeholder-shown {
+    background-color: lightyellow;
+}
+
+/*autofill*/
+.input14:autofill {
+    border: 2px solid blue;
+}
+
+/*blank*/
+.input15:blank {
+    border: 2px solid orange;
+}
+
+
+/* 1. ROOT */
+.pd {
+    background-color: #b29af3;
+}
+
+/* 2. EMPTY */
+.caja-vacia:empty {
+    background-color: pink;
+    
+}
+.caja-vacia:empty {
+    background-color: pink;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+/* 3. FIRST-CHILD */
+.primero li:first-child {
+    background-color: pink;
+}
+
+/* 4. LAST-CHILD */
+.ultimo li:last-child {
+    background-color: lightblue;
+}
+
+/* 5. ONLY-CHILD */
+.unico p:only-child {
+    background-color: lightgreen;
+}
+
+/* 6. FIRST-OF-TYPE */
+.grupo1 p:first-of-type {
+    color: rgb(0, 87, 201);
+}
+
+/* 7. LAST-OF-TYPE */
+.grupo2 p:last-of-type {
+    color: blue;
+}
+
+/* 8. ONLY-OF-TYPE */
+.grupo3 p:only-of-type {
+    color: rgb(0, 15, 228);
+}
+
+/* 1. NTH-CHILD */
+.lista1 li:nth-child(2) {
+    background-color: rgb(241, 200, 124);
+}
+
+/* 2. NTH-LAST-CHILD */
+.lista2 li:nth-last-child(2) {
+    background-color: rgb(214, 106, 241);
+}
+
+/* 3. NTH-OF-TYPE */
+.lista3 p:nth-of-type(2) {
+    color: red;
+}
+
+/* 4. NTH-LAST-OF-TYPE */
+.lista4 p:nth-last-of-type(2) {
+    color: blue;
+}
+
+
+/* 1. NOT */
+.texto:not(.especial) {
+    color: red;
+}
+
+/* 2. IS */
+:is(h3, h4) {
+    color: blue;
+}
+
+/* 3. WHERE */
+:where(h3, h4) {
+    background-color: pink;
+}
+
+/* 4. HAS */
+.caja:has(p) {
+    background-color: lightgreen;
+}
+
+/*LANG*/
+p:lang(es) {
+    color: red;
+}
+
+p:lang(en) {
+    color: blue;
+}
+
+p:lang(fr) {
+    color: green;
+}
+
+/*dir()*/
+p:dir(ltr) {
+    background-color: rgb(238, 80, 238);
+    text-align: left;
+}
+
+p:dir(rtl) {
+    background-color: pink;
+    text-align: right;
+}
+
+/*target*/
+#contenido:target {
+    background-color: pink;
+    padding: 15px;
+}
+
+/*fullscreen*/
+#pantalla:fullscreen {
+    background-color: pink;
+    color: black;
+    padding: 50px;
+}
+
+/*modal*/
+dialog:modal {
+    background-color: lightpink;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+
+/*playing*/
+video:playing {
+    border: 4px solid green;
+}
+
+/*paused*/
+video:paused {
+    border: 4px solid red;
+}
+
+:root {
+  --color-extra: #8b3d99;
+  --fondo-extra: #f7e8fb;
+}
+.extra-title { background-color: var(--color-extra); color: white; padding: 18px; text-align: center; }
+.extra-intro { background: var(--fondo-extra); padding: 14px; text-align: center; }
+.extra-card { background: #f3d8f0; border: 2px solid #fff; border-radius: 12px; padding: 18px; margin: 8px 0; }
+.extra-card h6 { color: #72227d; font-weight: bold; }
+.extra-card p { background: #fff0fa; padding: 8px; }
+.extra-card button, .extra-card summary { cursor: pointer; padding: 8px 12px; border-radius: 8px; }
+.demo-root span { color: var(--color-extra); font-weight: bold; }
+@scope (#scope-demo) {
+  :scope { border: 3px dashed #9a48a7; padding: 8px; border-radius: 8px; }
+  p { color: #333; }
+}
+mi-tarjeta:defined { display: inline-block; padding: 10px; background: #c4f2c4; border: 2px solid green; border-radius: 8px; }
+.open-demo[open] { background: #b9e7fb; padding: 10px; border-radius: 8px; }
+#demo-popover { padding: 15px; border: 2px solid #7c3c92; border-radius: 10px; background: #f5d9ff; }
+#demo-popover:popover-open { box-shadow: 0 0 15px #b76cc9; }
+.pip-demo:picture-in-picture { border: 5px solid #8b3d99; }
+.of-demo .filtro:nth-child(2 of .filtro) { background: #ffd56b; font-weight: bold; }
+.odd-demo li:nth-child(odd) { background: #ffd1e9; }
+.even-demo li:nth-child(even) { background: #c9e7ff; }
+.three-demo li:nth-child(3n) { background: #b8f1c0; font-weight: bold; }
+.three-plus-demo li:nth-child(3n + 1) { background: #ffcda9; font-weight: bold; }
+.last-two-demo li:nth-last-child(2) { background: #d7c4ff; font-weight: bold; }
+.type-three-demo p:nth-of-type(3) { background: #c7f0a8; font-weight: bold; }
+.type-last-demo p:nth-last-of-type(2) { background: #c7f0a8; font-weight: bold; }
+.has-image-demo:has(img) { display: flex; align-items: center; gap: 10px; background: #b9e6f7; border: 2px solid #408bb1; padding: 10px; border-radius: 8px; margin: 8px 0; }
+.has-image-demo img { max-width: 100px; border-radius: 6px; }
+.check-parent-demo:has(input:checked) { display: block; padding: 12px; background: #b6f2b6; border: 2px solid green; border-radius: 8px; }
+.not-demo span:not(.destacado) { display: inline-block; background: #cde7ff; padding: 8px; margin: 4px; border-radius: 6px; }
+.not-demo .destacado { display: inline-block; background: #ffd66d; padding: 8px; margin: 4px; border-radius: 6px; }
+.extra-card ul { padding-left: 24px; }
+.extra-card li { padding: 5px; margin: 2px; }
+.extra-card small { display: block; margin-top: 8px; color: #555; }
+@media (max-width: 576px) { .extra-card { margin: 5px 0; } }
+
+
+/* PALETA PERSONALIZADA: azul petróleo, lavanda y ámbar */
+body{background:#edf3f5;color:#20343b}
+nav{background:#245b63!important;color:white}
+main{background:#d7e8e8!important}
+section{background:#e5eff0!important}
+aside{background:#d9d4ee!important}
+footer{background:#344b63!important;color:white}
+.titulo{background:#344b63!important;color:white}
+.azul{background:#c5e1e2!important}.salmon{background:#f4e4c8!important}
+.verde{background:#cce5d8!important}.amarillo{background:#f5e8b8!important}
+.morado{background:#d9d2ec!important}.ros{background:#f0d8d2!important}
+.pd{background:#c8d8e8!important}
+.boton{background:#245b63!important}.boton:hover{background:#d18b42!important;color:#172c33!important}
+.botton{background:#496d83!important}.botton:active{background:#8a6bb1!important}
+.color{background:#d6e7e5!important}
+input:focus{border:3px solid #b77b36!important;background:#fff5df!important}
+.buttoon:focus-visible{outline:3px solid #8a6bb1!important;background:#d9d2ec!important}
+.caja{border:2px solid #527b82!important}.caja:focus-within{background:#c5e1e2!important}
+a:link{color:#245b63!important}a:visited{color:#725b98!important}a:local-link{color:#725b98!important}
+section:target{background:#f5e8b8!important}
+p{border-color:#9ab9b8!important;background:#e6eeee!important}
+.input1:enabled{background:#d5eadf!important}.input2:disabled{background:#e6dede!important}
+.input3:checked{accent-color:#28745d}.input4:indeterminate{outline:3px solid #b77b36!important}
+.input5:default{outline:3px solid #527b9a!important}.input6:required{border:2px solid #b77b36!important}
+.input7:optional{border:2px solid #8a6bb1!important}
+.input8:valid,.input8:user-valid{border:2px solid #28745d!important}
+.input8:invalid,.input8:user-invalid{border:2px solid #b65c55!important}
+.input9:in-range{background:#d5eadf!important}.input10:out-of-range{background:#f4d9d5!important}
+.input11:read-only{background:#e3e8eb!important}
+.input12:read-write,.input13:placeholder-shown{background:#fff5df!important}
+.input14:autofill{border:2px solid #527b9a!important}.input15:blank{border:2px solid #b77b36!important}
+.caja-vacia:empty{background:#f5e8b8!important;border-color:#527b82!important}
+.primero li:first-child{background:#f0d8d2!important}.ultimo li:last-child{background:#c5e1e2!important}
+.unico p:only-child{background:#cce5d8!important}
+.grupo1 p:first-of-type,.grupo2 p:last-of-type,.grupo3 p:only-of-type{color:#245b63!important}
+.lista1 li:nth-child(2){background:#f5e8b8!important}.lista2 li:nth-last-child(2){background:#d9d2ec!important}
+.lista3 p:nth-of-type(2),.lista4 p:nth-last-of-type(2){color:#725b98!important}
+.texto:not(.especial){color:#a34e49!important}
+:is(h3,h4){color:#245b63!important}:where(h3,h4){background:#e5eff0!important}
+.caja:has(p){background:#cce5d8!important}
+p:lang(es){color:#245b63!important}p:lang(en){color:#527b9a!important}p:lang(fr){color:#725b98!important}
+p:dir(ltr){background:#e1eceb!important}p:dir(rtl){background:#eee7f5!important}
+#contenido:target{background:#f5e8b8!important}
+#pantalla:fullscreen{background:#344b63!important;color:white!important}
+dialog:modal{background:#f0d8d2!important;border:2px solid #725b98!important}
+video:playing{border:4px solid #28745d!important}video:paused{border:4px solid #b65c55!important}
+:root{--color-extra:#245b63;--fondo-extra:#e5eff0}
+.extra-title{background:#344b63!important}.extra-intro{background:#e5eff0!important}
+.extra-card{background:#dce9e8!important;border-color:#c5d6d8!important}
+.extra-card h6{color:#245b63!important}.extra-card p{background:#edf3f5!important}
+.demo-root span{color:#245b63!important}
+@scope (#scope-demo){:scope{border-color:#527b82!important}}
+mi-tarjeta:defined{background:#cce5d8!important;border-color:#28745d!important}
+.open-demo[open]{background:#c5e1e2!important}
+#demo-popover{border-color:#725b98!important;background:#eee7f5!important}
+#demo-popover:popover-open{box-shadow:0 0 15px #8a6bb1!important}
+.pip-demo:picture-in-picture{border-color:#725b98!important}
+.of-demo .filtro:nth-child(2 of .filtro){background:#f5e8b8!important}
+.odd-demo li:nth-child(odd){background:#f0d8d2!important}
+.even-demo li:nth-child(even){background:#c5e1e2!important}
+.three-demo li:nth-child(3n){background:#cce5d8!important}
+.three-plus-demo li:nth-child(3n + 1){background:#f4e4c8!important}
+.last-two-demo li:nth-last-child(2){background:#d9d2ec!important}
+.type-three-demo p:nth-of-type(3),.type-last-demo p:nth-last-of-type(2){background:#cce5d8!important}
+.has-image-demo:has(img){background:#c5e1e2!important;border-color:#527b82!important}
+.check-parent-demo:has(input:checked){background:#cce5d8!important;border-color:#28745d!important}
+.not-demo span:not(.destacado){background:#c5e1e2!important}
+.not-demo .destacado{background:#f5e8b8!important}

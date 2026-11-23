@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi primera pagina web con pseudoclases</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="col-6 col-md-12 col-md-4 col-md-4 col-lg-4 col-xl-12 col-xxl-12 titulo ">
+                hInteracción del usuario
+            </nav>
+            <button class="col-6 col-md-12 col-md-4 col-md-4 col-lg-4 col-xl-3 col-xl-3 col-xl-3 col-xxl-3 altura  boton">
+                Soy hover
+            </button>
+            <button class="col-md-12 col-md-4 col-md-4 col-lg-4 col-xl-3 col-xl-3 col-xl-3 col-xxl-3 altura botton">
+                Soy active
+            </button>
+            <button class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xl-3 col-xl-3 col-xxl-3 altura color ">
+               
+                soy focus
+                <input type="text" placeholder="Escribe tu nombre">
+        
+                <input type="text" placeholder="Escribe tu nombre">
+
+            </button>
+            
+            <button class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xl-3 col-xl-3 col-xxl-3 altura buttoon">
+                Soy focus-visible
+            </button>
+            <nav class="col-sm-12 col-md-12 col-md-12  col-xl-12 col-xxl-12 altura caja">
+                Soy focus-within
+                <input type="text" placeholder="Escribe aquí">
+            </nav>
+        </header>
+        <div class="row">
+            <section class="col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-12 col-xxl-12 titulo ">
+                Pseudo-clases de enlaces
+            </section>
+
+            <section class="col-6 col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-3 col-xl-3 col-xl-3 col-xxl-3 altura     azul">
+                Soy Link
+
+                <a href="https://color.adobe.com/es/explore">Paleta de Colores</a>
+            </section>
+
+            <aside class="col-6 col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-3 col-xl-3 col-xl-3 col-xxl-3 altura    azul">
+                Soy visited
+                <a href="https://github.com/">Visita GitHub</a>
+            </aside>
+
+            <section class=" col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xl-3 col-xl-3 col-xxl-3 altura   azul">
+                Soy any-link
+
+                <a href="https://www.google.com">Google</a>
+
+            </section>
+            <section class=" col-6 col-sm-12 col-md-6 col-lg-6  col-xl-3 col-xl-3 col-xl-3 col-xxl-3 altura  azul">
+                Soy local-link
+                <a href="/inicion.html">inicio</a>
+            </section>
+            
+             <aside class="col-6 col-sm-12 col-md-6 col-md-6 col-xl-3 col-xl-6 col-xl-6 altura azul">
+                Soy target
+                <a href="https://es.wikipedia.org/wiki/Inform%C3%A1tica">Ver información</a>
+
+            </aside>
+
+            <section class=" col-sm-12 col-md-6 col-lg-6  col-xl-3 col-xl-6 col-xl-6 altura contenedor azul">
+                Soy scope
+                <p>Este es un párrafo</p>
+            </section>
+
+            <section class="col-sm-12 col-md-12  col-xl-12 col-xxl-12 titulo">
+                Pseudo-clases de formularios
+            </section>
+
+            <section class=" col-sm-12 col-md-12 col-lg-12   col-xl-12  altura salmon ">
+                <input class="input1" type="text" placeholder="Campo habilitado">
+
+                <input class="input2" type="text" disabled value="No disponible">
+
+                <input class="input3" type="checkbox" id="acepto">
+                <label for="acepto">Acepto</label>
+                <input class="input3" type="checkbox" id="No acepto">
+                <label for="No acepto">No Acepto</label>
+
+                <input class="input4" type="checkbox" id="opcion">
+                <label for="opcion">Opción</label>
+                <script>
+                document.getElementById("opcion").indeterminate = true;
+                </script>
+
+                <input class="input5" type="radio" name="color" checked>
+                <label>Azul</label>
+                <input class="input5" type="radio" name="color" checked>
+                <label>Rojo</label>
+
+                 
+                <input class="input6" type="text" required placeholder="Nombre obligatorio">
+
+                <input class="input7"type="text" placeholder="Segundo nombre (opcional)">
+
+                <input class="input8"type="email" placeholder="Correo electrónico">
+
+                <input class="input9"type="number" min="1" max="10" value="5">
+
+                <input class="input10" type="number" min="1" max="10" value="15">
+
+                <input class="input11" type="text" value="Solo lectura" readonly>
+                
+                <input class="input12"  type="text" placeholder="Puedes escribir aquí">
+
+                <input class="input13"  type="text" placeholder="Escribe tu nombre">
+
+                <input class="input14" type="text" autocomplete="name" placeholder="Nombre">
+
+                <input class="input15" type="text" placeholder="Campo vacío">
+            </section>
+
+            <section class="col-sm-12 col-md-4 col-md-12 col-lg-12 col-xl-12 col-xxl-12 titulo">
+               Pseudo-clases de estructura
+            </section>  
+
+
+
+    <!-- 1. ROOT -->
+
+     <section class="col-6 col-md-4 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pd ">
+        soy root
+        <p>Cambia el fondo general de la página.</p>
+     </section>  
+
+     <!-- 2. EMPTY -->
+
+     <section class="col-6 col-md-4 col-md-6 col-lg-6 col-xl-6 col-xxl-6 ">
+         soy EMPTY
+        <p>Selecciona elementos sin contenido</p>
+        <div class="caja-vacia"></div>
+     </section> 
+
+
+
+     <!-- 3. FIRST-CHILD -->
+      <section class="col-6 col-md-4 col-md-4 col-lg-4 col-xl-4 col-xl-4 col-xxl-4 ">
+          first-child
+          <p>Selecciona el primer hijo de un elemento padre.</p>
+        <ul class="primero">
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>
+        </ul>
+     </section> 
+   
+
+    <!-- 4. LAST-CHILD -->
+     <section class="col-6 col-md-4 col-md-4 col-lg-4 col-xl-4 col-xl-4 col-xxl-4 ">
+          last-child
+          <p>Selecciona el último hijo de un elemento padre.</p>
+        <ul class="ultimo">
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>
+        </ul>
+     </section> 
+
+     <!-- 5. ONLY-CHILD -->
+      <section class="col-12 col-md-4 col-md-4 col-lg-4 col-xl-4 col-xl-4 col-xxl-4 ">
+          only-child
+          <p>Selecciona un elemento cuando es el único hijo de su padre.</p>
+        <div class="unico">
+            <p>Soy el único párrafo</p>
+        </div>
+     </section> 
+
+    <!-- 6. FIRST-OF-TYPE -->
+     <section class="col-6 col-md-4 col-md-6  col-lg-6  col-xl-4 col-xl-4 col-xxl-4 ">
+         first-of-type
+         <p>Selecciona el primer elemento de un tipo específico.</p>
+        <div class="grupo1">
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+        </div>
+     </section> 
+
+    <!-- 7. LAST-OF-TYPE -->
+     <section class="col-6 col-md-4 col-md-6  col-lg-6 col-xl-4 col-xl-4 col-xxl-4 ">
+         last-of-type
+         <p>Selecciona el último elemento de un tipo específico.</p>
+            <div class="grupo2">
+            <p>Primer párrafo</p>
+            <h6>Subtítulo</h6>
+            <p>Último párrafo</p>
+        </div>
+        
+     </section> 
+    
+
+
+    <!-- 8. ONLY-OF-TYPE -->
+     <section class="col-12 col-md-4 col-md-12 col-lg-12 col-xl-4 col-xl-4 col-xxl-4 ">
+          only-of-type 
+          <p>Selecciona un elemento cuando es el único de su tipo dentro de su padre.</p>
+          <div class="grupo3">     
+            <h6>Título</h6>
+            <p>Único párrafo</p>
+            <span>Otro elemento</span>
+          </div>
+        
+     </section> 
+
+
+    <!-- 9. NTH-CHILD -->
+        
+    <section class="col-6 col-md-4 col-md-4 col-lg-4 col-xl-6 ">
+        <h6>1. NTH-CHILD</h6>
+        <p>Selecciona el segundo elemento contando desde arriba.</p>
+
+        <ul class="lista1">
+            <li>Elemento uno</li>
+            <li>Elemento dos</li>
+            <li>Elemento tres</li>
+            <li>Elemento cuatro</li>
+        </ul>
+    </section>
+
+    <!-- 2. NTH-LAST-CHILD -->
+    <section class="col-6 col-md-4 col-md-4 col-lg-4 col-xl-6 ">
+        <h6>2. NTH-LAST-CHILD</h6>
+        <p>Selecciona el segundo elemento contando desde abajo.</p>
+
+        <ul class="lista2">
+            <li>Elemento uno</li>
+            <li>Elemento dos</li>
+            <li>Elemento tres</li>
+            <li>Elemento cuatro</li>
+        </ul>
+    </section>
+
+    <!-- 3. NTH-OF-TYPE -->
+    <section class="col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-6 ">
+        <h6>3. NTH-OF-TYPE</h6>
+        <p>Selecciona el segundo elemento de ese mismo tipo.</p>
+
+        <div class="lista3">
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+            <p>Tercer párrafo</p>
+        </div>
+    </section>
+
+    <!-- 4. NTH-LAST-OF-TYPE -->
+    <section class="col-sm-12 col-md-4 col-md-12 col-lg-12 col-xl-6 ">
+        <h6>4. NTH-LAST-OF-TYPE</h6>
+        <p>Selecciona el segundo elemento de ese tipo contando desde abajo.</p>
+
+        <div class="lista4">
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+            <p>Tercer párrafo</p>
+        </div>
+    </section>
+
+   
+
+
+
+<section class="col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 titulo">
+Pseudo-clases lógicas
+ </section> 
+
+  <!-- NOT -->
+    <section  class="col-6 col-md-4 col-md-4 col-lg-4 col-xl-6 col-xxl-6 verde">
+        <h6>1. NOT</h6>
+
+        <p class="texto">Texto 1</p>
+        <p class="texto especial">Texto 2</p>
+        <p class="texto">Texto 3</p>
+    </section>
+
+    <!-- IS -->
+    <section  class="col-6 col-md-4 col-md-4 col-lg-4 col-xl-6 col-xxl-6 verde">
+        <h6>2. IS</h6>
+
+        <h6>Título 1</h6>
+        <h6>Título 2</h6>
+        <p>Párrafo</p>
+    </section>
+
+    <!-- WHERE -->
+    <section  class="col-6 col-md-4 col-md-4 col-lg-4 col-xl-6 col-xxl-6 verde">
+        <h6>3. WHERE</h6>
+
+        <h6>Subtítulo 1</h6>
+        <h6>Subtítulo 2</h6>
+        <p>Este es un párrafo.</p>
+    </section>
+
+    <!-- HAS -->
+    <section  class="col-6 col-md-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 verde">
+        <h6>4. HAS</h6>
+
+        <div class="caja">
+            <p>Esta caja contiene un párrafo.</p>
+        </div>
+
+        <div class="caja">
+            <h6>Esta caja contiene un título.</h6>
+        </div>
+    </section>
+
+
+ <section class="col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 titulo">
+Pseudo-clases de idioma y dirección
+ </section>
+
+ <section class="col-6 col-md-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 amarillo ">
+    <h6>LANG</h6>
+    <h6>Selecciona elementos según el idioma que tengan configurado.</h6>
+
+    <p lang="es">Hola, ¿cómo estás?</p>
+    <p lang="en">Hello, how are you?</p>
+    <p lang="fr">Bonjour, comment ça va?</p>
+</section>
+
+<section class="col-6 col-md-6 col-md-46col-lg-6 col-xl-6 col-xxl-6 amarillo ">
+    <h6>DIR</h6>
+    <h6>Selecciona elementos según la dirección del texto.</h6>
+
+    <p dir="ltr">Este texto va de izquierda a derecha.</p>
+
+    <p dir="rtl">هذا النص من اليمين إلى اليسار</p>
+</section>
+
+<section class="col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 titulo">
+Pseudo-clases de visualización y estados especiales
+ </section>
+
+ <section class="col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-6 col-xxl-6 morado ">
+    <h6>TARGET</h6>
+    <h6>Selecciona un elemento al que llegamos mediante un enlace dentro de la página.</h6>
+
+    <a href="#contenido">Ir al contenido</a>
+
+    <div id="contenido">
+        <p>¡Llegaste al contenido!</p>
+    </div>
+</section>
+
+<section class="col-6 col-md-4 col-md-4 col-lg-4 col-xl-6 col-xxl-6 morado ">
+    <h6>FULLSCREEN</h6>
+    <h6 id="pantalla">Este elemento puede ocupar toda la pantalla.</h6>
+
+    <button onclick="document.getElementById('pantalla').requestFullscreen()">
+        Pantalla completa
+    </button>
+</section>
+
+<section class="col-6 col-md-4 col-md-4 col-lg-4 col-xl-12 col-xxl-12 morado ">
+    <h6> MODAL</h6>
+    <h6>Selecciona una ventana de diálogo que está abierta en modo modal.</h6>
+
+    <dialog id="ventana">
+        <p>Esta es una ventana modal.</p>
+        <button onclick="document.getElementById('ventana').close()">
+            Cerrar
+        </button>
+    </dialog>
+
+    <button onclick="document.getElementById('ventana').showModal()">
+        Abrir ventana
+    </button>
+</section>
+
+<section class="col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 titulo">
+Pseudo-clases de medios
+ </section>
+
+ <section class="col-sm-12 col-md-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 ros">
+    <h6> PLAYING</h6>
+    <h6>Selecciona un elemento de audio o video cuando se está reproduciendo.</h6>
+
+    <video controls width="300">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section class="col-sm-12 col-md-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 ros">
+    <h6>PAUSED</h6>
+    <h6>Selecciona un audio o video cuando está pausado.</h6>
+
+    <video controls width="300">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</section>
+        <section class="col-12 titulo extra-title">Otras Pseudoclases...</section>
+        <section class="col-12 extra-intro">Estas demostraciones complementan las anteriores. Algunas requieren funciones modernas del navegador.</section>
+
+        <section class="col-12 col-md-6 extra-card demo-root"><h6>1. :root</h6><p>Define variables globales utilizadas en la página.</p><span>Color global de ejemplo</span></section>
+        <section class="col-12 col-md-6 extra-card"><h6>2. :scope</h6><p>Selecciona el elemento que actúa como ámbito.</p><div id="scope-demo" class="scope-demo"><p>Elemento dentro del ámbito</p><p>Otro elemento dentro del ámbito</p></div></section>
+        <section class="col-12 col-md-6 extra-card"><h6>3. :defined</h6><p>Identifica elementos que ya están definidos.</p><p><mi-tarjeta>Elemento personalizado definido</mi-tarjeta></p></section>
+        <section class="col-12 col-md-6 extra-card"><h6>4. :open</h6><p>Selecciona elementos en estado abierto.</p><details class="open-demo"><summary>Abrir detalles</summary><p>¡El elemento está abierto!</p></details></section>
+        <section class="col-12 col-md-6 extra-card"><h6>5. :popover-open</h6><p>Se aplica a un Popover mientras está abierto.</p><button popovertarget="demo-popover">Mostrar popover</button><div id="demo-popover" popover>¡Este popover está abierto! <button popovertarget="demo-popover" popovertargetaction="hide">Cerrar</button></div></section>
+        <section class="col-12 col-md-6 extra-card"><h6>6. :picture-in-picture</h6><p>Aplica estilos a un video cuando está en modo Picture-in-Picture (si el navegador lo admite).</p><video id="pip-video" class="pip-demo" controls width="260"><source src="" type="video/mp4">Tu navegador no permite mostrar el video de ejemplo.</video><button type="button" onclick="document.getElementById('pip-video').requestPictureInPicture?.()">Intentar Picture-in-Picture</button><small>Se necesita una fuente de video para que funcione.</small></section>
+        <section class="col-12 col-md-6 extra-card"><h6>7. :host</h6><p>Estiliza el anfitrión de un Shadow DOM.</p><mi-host-demo></mi-host-demo></section>
+        <section class="col-12 col-md-6 extra-card"><h6>8. :host(.especial)</h6><p>Estiliza el anfitrión cuando tiene una clase específica.</p><mi-host-clase class="especial"></mi-host-clase></section>
+        <section class="col-12 col-md-6 extra-card"><h6>9. :host-context()</h6><p>Permite que el anfitrión se adapte a un contexto externo en implementaciones compatibles.</p><div class="contexto-demo"><mi-host-context></mi-host-context></div><small>Nota: :host-context() está en desuso en algunos contextos y su soporte puede variar.</small></section>
+        <section class="col-12 col-md-6 extra-card"><h6>10. :nth-child(2 of .filtro)</h6><p>Selecciona el segundo hijo que cumple el selector .filtro.</p><ul class="of-demo"><li>Normal</li><li class="filtro">Filtrado 1</li><li>Normal</li><li class="filtro">Filtrado 2</li><li class="filtro">Filtrado 3</li></ul></section>
+        <section class="col-12 col-md-6 extra-card"><h6>11. :nth-child(odd)</h6><p>Selecciona los hijos en posiciones impares.</p><ul class="odd-demo"><li>Uno</li><li>Dos</li><li>Tres</li><li>Cuatro</li><li>Cinco</li></ul></section>
+        <section class="col-12 col-md-6 extra-card"><h6>12. :nth-child(even)</h6><p>Selecciona los hijos en posiciones pares.</p><ul class="even-demo"><li>Uno</li><li>Dos</li><li>Tres</li><li>Cuatro</li><li>Cinco</li></ul></section>
+        <section class="col-12 col-md-6 extra-card"><h6>13. :nth-child(3n)</h6><p>Selecciona cada tercer hijo.</p><ul class="three-demo"><li>Uno</li><li>Dos</li><li>Tres</li><li>Cuatro</li><li>Cinco</li><li>Seis</li></ul></section>
+        <section class="col-12 col-md-6 extra-card"><h6>14. :nth-child(3n + 1)</h6><p>Selecciona el primer hijo y luego cada tres posiciones.</p><ul class="three-plus-demo"><li>Uno</li><li>Dos</li><li>Tres</li><li>Cuatro</li><li>Cinco</li><li>Seis</li></ul></section>
+        <section class="col-12 col-md-6 extra-card"><h6>15. :nth-last-child(2)</h6><p>Selecciona el penúltimo hijo.</p><ul class="last-two-demo"><li>Uno</li><li>Dos</li><li>Tres</li><li>Cuatro</li></ul></section>
+        <section class="col-12 col-md-6 extra-card"><h6>16. :nth-of-type(3)</h6><p>Selecciona el tercer párrafo de su tipo.</p><div class="type-three-demo"><span>Span</span><p>Primer párrafo</p><h6>Encabezado</h6><p>Segundo párrafo</p><p>Tercer párrafo</p></div></section>
+        <section class="col-12 col-md-6 extra-card"><h6>17. :nth-last-of-type(2)</h6><p>Selecciona el penúltimo párrafo de su tipo.</p><div class="type-last-demo"><p>Primer párrafo</p><span>Span</span><p>Segundo párrafo</p><p>Tercer párrafo</p></div></section>
+        <section class="col-12 col-md-6 extra-card"><h6>18. :has(img)</h6><p>Selecciona una tarjeta que contiene una imagen.</p><div class="has-image-demo"><img alt="Icono ilustrativo" src="https://placehold.co/100x70?text=Imagen"><span>Esta tarjeta contiene una imagen.</span></div><div class="has-image-demo"><span>Esta tarjeta no tiene imagen.</span></div></section>
+        <section class="col-12 col-md-6 extra-card"><h6>19. :has(input:checked)</h6><p>Selecciona el contenedor que tiene una casilla marcada.</p><label class="check-parent-demo"><input type="checkbox"> Marca la casilla para cambiar el contenedor</label></section>
+        <section class="col-12 col-md-6 extra-card"><h6>20. :not(.destacado)</h6><p>Selecciona elementos que no tienen la clase .destacado.</p><div class="not-demo"><span>Normal</span><span class="destacado">Destacado (excluido)</span><span>Normal</span></div></section>
+
+        <script>
+          customElements.define('mi-tarjeta', class extends HTMLElement {});
+          customElements.define('mi-host-demo', class extends HTMLElement { constructor(){ super(); const s=this.attachShadow({mode:'open'}); s.innerHTML='<style>:host{display:block;padding:12px;background:#bfe7f5;border:2px solid #3986a8;border-radius:8px;color:#123}p{margin:0}</style><p>Estilo aplicado desde :host</p>'; }});
+          customElements.define('mi-host-clase', class extends HTMLElement { constructor(){ super(); const s=this.attachShadow({mode:'open'}); s.innerHTML='<style>:host(.especial){display:block;padding:12px;background:#ffe0a8;border:2px solid #bd7918;border-radius:8px;color:#422}</style><p>El host tiene la clase especial</p>'; }});
+          customElements.define('mi-host-context', class extends HTMLElement { constructor(){ super(); const s=this.attachShadow({mode:'open'}); s.innerHTML='<style>:host-context(.contexto-demo){display:block;padding:12px;background:#e7c9f8;border:2px solid #8844aa;border-radius:8px}</style><p>Ejemplo de contexto para host-context</p>'; }});
+        </script>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+
+</body>
+
+
+
+<footer class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 altura">
+ Soy footer
+ </footer>
+
+</html>
